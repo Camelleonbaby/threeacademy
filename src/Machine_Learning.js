@@ -145,7 +145,7 @@ class Machine_Learning extends Component {
 
           <h1 style = {{color: "black", fontsize: "bold"}}> Data Scraping Training Course </h1>
 
-              <div className="row  project-showcase" style = {{ paddingTop: "2em", paddingBottom: "em"}}>
+              <div className="row  project-showcase" style = {{ paddingTop: "2em"}}>
 
                 <div className = "col-md-6  project-showcase" >
                   <div className = "project-content" style = {{textAlign: "Right", paddingTop:"1.5em"}} > 
@@ -158,6 +158,7 @@ class Machine_Learning extends Component {
                             width="100%"
                             height="300"
                             frameBorder="0"
+                            allowFullScreen
                           
 
                     /> 
@@ -166,8 +167,8 @@ class Machine_Learning extends Component {
                 </div>
 
                 <div className = "col-md-6 project-showcase">
-                  <div className = "project-content" style = {{paddingRight: "5.5em"}}> 
-                    This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the techniques of data Scraping. The target learners are undergraduate and postgraduate students who want to have a career in the field of Data Science but don't know how to start.   In this course, You will learn the basis of Python, HTML, and webApp techniques.  You will also build your own data pipeline using Python, including data scraping from website, data cleaning, and data loading to SQL databse. This course will provide you a new vision about Data Scince and Data Scientist as a career.              
+                  <div className = "project-content"> 
+                    This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the techniques of data Scraping. The target learners are , career starters, and continuous learners who want to have a career in the field of Data Science but don't know how to start.   In this course, You will learn the basis of Python, HTML, and webApp techniques.  You will also build your own data pipeline using Python, including data scraping from website, data cleaning, and data loading to SQL databse. This course will provide you a new vision about Data Scince and Data Scientist as a career.              
                   </div>
                 </div>
 
@@ -188,7 +189,7 @@ class Machine_Learning extends Component {
             <div className="row services">
               <div className="col-md-3 text-center">
                 <h3 style = {{color: "black", paddingTop: "1em"}}> Undergraduate </h3>
-                <p style = {{color: "black"}}> If you are an undergraduate student and want to have some expericences on the most funcy field in the next few decades </p>
+                <p style = {{color: "black"}}> If you are an undergraduate student and want to have some expericences in the hottest field in the next few decades </p>
 
               </div> 
 
@@ -280,7 +281,7 @@ class Machine_Learning extends Component {
 
               <div className="col-md-3 text-center">
 
-                <h3 style = {{color: "white", paddingTop: "1em"}}> Your own project </h3>
+                <h3 style = {{color: "white", paddingTop: "1em"}}> Owned project </h3>
                 <p style = {{color: "white"}}> You will develop your own machine learning model for your own problems, and add it into your resume.  
                 </p>
               </div> 

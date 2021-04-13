@@ -130,7 +130,7 @@ class App extends React.Component {
               <div className = "col-md-6">
                 <h2> About Us</h2>
                 <div className = "about-content"> 
-                    We’re a team of data scientists, data engineers, educators, machine learning experts, and more, working together to provide a better learning environment for CAREER STARTER and CONTINUOUS LEARNER in the field of DATA SCIENCE. To this end, we develop a series of learner-centered training courses  covering data collection, data visualisation and analysis, and data modelling (Machine Learning). We also provide industrial level hand-on projects for the learners to practice their skills and gain industry experience. 
+                    We’re a team of data scientists, data engineers, educators, machine learning experts, and more, working together to provide a better learning environment of DATA SCIENCE and ENGINEERING for COLLEGE STUDENT, CAREER STARTER and CONTINUOUS LEARNER. To this end, we develop a series of learner-centered training courses  covering data collection, data visualisation and analysis, and data modelling (Machine Learning). We also provide industrial level hand-on projects for the learners to practice their skills and gain industry experience. 
                 
                 </div>
 
@@ -156,7 +156,7 @@ class App extends React.Component {
                 <div className="icon">
                   <i className="fa fa-database"></i>            
                 </div>
-                <LinkPage to= '/data-scraping'><button type="button" className = "btn btn-primary" style = {{'backgroundColor': 'Transparent', 'outline':'none', 'border': 'none'}}> <h3> Data Scraping </h3> </button></LinkPage>
+                <LinkPage to= '/data-scraping'><button type="button" className = "btn btn-primary" style = {{'backgroundColor': 'Transparent', 'outline':'none', 'border': 'none'}}> <h4> Data Collection and Cleaning </h4> </button></LinkPage>
                 <p> You will build your own data piplines and learn the basis of Python and website. </p>
 
               </div> 
@@ -167,7 +167,7 @@ class App extends React.Component {
                   <i className="fa fa-line-chart"></i>          
                 </div>
 
-                <LinkPage to= '/data-visualization'><button type="button" className = "btn btn-primary" style = {{'backgroundColor': 'Transparent', 'outline':'none', 'border': 'none'}}> <h3> Data Visualization </h3> </button></LinkPage>
+                <LinkPage to= '/data-visualization'><button type="button" className = "btn btn-primary" style = {{'backgroundColor': 'Transparent', 'outline':'none', 'border': 'none'}}> <h4> Data Visualization </h4> </button></LinkPage>
                 <p> You will build your own databorads with various data visualization techniques.  
                 </p>
               </div> 
@@ -177,7 +177,7 @@ class App extends React.Component {
                   <i className="fa fa-cogs"></i>          
                 </div>
 
-                <LinkPage to= '/machine-learning'><button type="button" className = "btn btn-primary" style = {{'backgroundColor': 'Transparent', 'outline':'none', 'border': 'none'}}> <h3> Machine Learning </h3> </button></LinkPage>
+                <LinkPage to= '/machine-learning'><button type="button" className = "btn btn-primary" style = {{'backgroundColor': 'Transparent', 'outline':'none', 'border': 'none'}}> <h4> Machine Learning </h4> </button></LinkPage>
                 <p> You will build your own ML models for solving critical business problems.   
                 </p>
 
@@ -188,7 +188,7 @@ class App extends React.Component {
                   <i className="fa fa-industry"></i>      
                 </div>
 
-                <h3> Industrial Data Project Training </h3>
+                <LinkPage to= '/machine-learning'><button type="button" className = "btn btn-primary" style = {{'backgroundColor': 'Transparent', 'outline':'none', 'border': 'none'}}> <h4> Industrial Data Project Training </h4> </button></LinkPage>
                 <p> You will get involved in a real industrial data project and gain hand-on experience.  
                 </p>
 
@@ -206,9 +206,9 @@ class App extends React.Component {
 
               <div className="row  project-showcase">
                 <div className = "col-md-6 project-showcase">
-                <h2> Data Scraping Training Course </h2>
+                <h2> Data Collection/Cleaning </h2>
                 <div className = "project-content"> 
-                  This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the techniques of data Scraping. The target learners are undergraduate and postgraduate students who want to have a career in the field of Data Science but don't know how to start.   In this course, you will build your own data pipeline using Python, including data scraping from website, data cleaning, and data loading to SQL databse. You will learn the basis of Python, HTML, and webApp techniques.
+                  This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the techniques of data collection and cleaning. The target learners are undergraduate/postgraduate students and career starter who want to find job opportunities in the field of Data Science but don't know how to start.   In this course, you will build your own data pipeline using Python, including data scraping from website, data cleaning, and data loading to SQL databse. You will learn the basis of Python, HTML, and webApp techniques.
                 
                 </div>
 
@@ -218,7 +218,7 @@ class App extends React.Component {
 
                 <div className = "col-md-6">
                   <div className = "project-img"> 
-                  <img src="img/datascraping.jpg" className="img-responsive" style = {{paddingRight: "15em", paddingBottom: "2em", paddingLeft: "2em"}}/>  
+                  <img src="img/datascraping.jpg" className="img-responsive" style = {{paddingRight: "10em", paddingBottom: "2em", paddingLeft: "2em"}}/>  
                   </div>
 
               </div>
@@ -228,10 +228,10 @@ class App extends React.Component {
 
               <div className="row  project-showcase">
                 <div className = "col-md-6">
-                <h2> Data Visualization Training Course </h2>
+                <h2> Data Visualization </h2>
                 <div className = "project-content"> 
 
-                This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the theory and techniques of data visualization. The target learners are undergraduate and postgraduate students who has interet in effectively visulizing data and analyzing data. In this course, you are going to develop your own data dashbord using Python, PowerBI and Tableau. You will learn the theoratical foundation of data visualization, the best strategies of visualizing various data types and the related programming and software skills.              
+                This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the theory and techniques of data visualization. The target learners are undergraduate and postgraduate students, and career starters who are interested in visulizing data and analyzing data. In this course, you are going to develop your own data dashbord using Python, PowerBI and Tableau. You will learn the theoratical foundation of data visualization, the best strategies of visualizing various data types and the related programming and software skills.              
                
                 </div>
 
@@ -241,7 +241,7 @@ class App extends React.Component {
 
                 <div className = "col-md-6">
                   <div className = "project-img"> 
-                  <img src="img/datavisualization.jpg" className="img-responsive" style = {{paddingRight: "15em", paddingBottom: "2em", paddingLeft: "2em"}} />  
+                  <img src="img/datavisualization.jpg" className="img-responsive" style = {{paddingRight: "10em", paddingBottom: "2em", paddingLeft: "2em"}} />  
                   </div>
 
               </div>
@@ -251,10 +251,10 @@ class App extends React.Component {
 
               <div className="row  project-showcase">
                 <div className = "col-md-6 project-showcase">
-                <h2> Machine Learning Training Course </h2>
+                <h2> Machine Learning </h2>
                 <div className = "project-content"> 
 
-                    This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the theory and techniques of data visualization. The target learners are undergraduate and postgraduate students who has interet in developing their own machine learning model. In this course, you will learn the fundamentals of machine learning and the strategies of developing a machine learning model. 
+                    This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the theory and techniques of data visualization. The target learners are undergraduate and postgraduate students who are interested in developing their own machine learning model. In this course, you will learn the fundamentals of machine learning and the strategies of developing a machine learning model. 
               
                 </div>
 
@@ -264,7 +264,7 @@ class App extends React.Component {
 
                 <div className = "col-md-6">
                   <div className = "project-img"> 
-                  <img src="img/machinelearning.jpg" className="img-responsive" style = {{paddingRight: "15em", paddingBottom: "2em", paddingLeft: "2em"}}/>  
+                  <img src="img/machinelearning.jpg" className="img-responsive" style = {{paddingRight: "10em", paddingBottom: "2em", paddingLeft: "2em"}}/>  
                   </div>
 
               </div>
@@ -277,7 +277,7 @@ class App extends React.Component {
           </section>
 
 
-        <section id="services" style={{backgroundImage: "url(img/Project_Background.jpeg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))"}}>
+        <section id="services" style={{backgroundImage: "url(img/Project_Background.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))"}}>
           <div className="container">     
             <h1>Data Projects</h1>
             <div className="row services">
@@ -511,7 +511,7 @@ class App extends React.Component {
                       <input type="email" className="form-control" placeholder="Email Address" />
                     </div>
                     <div className="form-group">
-                      <textarea className="form-control" rows="5" placeholder="Your Message"></textarea> 
+                      <textarea className="form-control" rows="3" placeholder="Your Message"></textarea> 
                     </div>
 
                     <button type="submit" className="btn btn-primary">SEND MESSAGE</button>
