@@ -218,7 +218,7 @@ class App extends React.Component {
 
                 <div className = "col-md-6">
                   <div className = "project-img"> 
-                  <img src="img/datascraping.jpeg" className="img-responsive" style = {{paddingRight: "15em", paddingBottom: "2em", paddingLeft: "2em"}}/>  
+                  <img src="img/datascraping.jpg" className="img-responsive" style = {{paddingRight: "15em", paddingBottom: "2em", paddingLeft: "2em"}}/>  
                   </div>
 
               </div>
@@ -241,7 +241,7 @@ class App extends React.Component {
 
                 <div className = "col-md-6">
                   <div className = "project-img"> 
-                  <img src="img/datavisualization.jpeg" className="img-responsive" style = {{paddingRight: "15em", paddingBottom: "2em", paddingLeft: "2em"}} />  
+                  <img src="img/datavisualization.jpg" className="img-responsive" style = {{paddingRight: "15em", paddingBottom: "2em", paddingLeft: "2em"}} />  
                   </div>
 
               </div>
@@ -264,7 +264,7 @@ class App extends React.Component {
 
                 <div className = "col-md-6">
                   <div className = "project-img"> 
-                  <img src="img/machinelearning.jpeg" className="img-responsive" style = {{paddingRight: "15em", paddingBottom: "2em", paddingLeft: "2em"}}/>  
+                  <img src="img/machinelearning.jpg" className="img-responsive" style = {{paddingRight: "15em", paddingBottom: "2em", paddingLeft: "2em"}}/>  
                   </div>
 
               </div>

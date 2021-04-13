@@ -166,7 +166,7 @@ class Data_Scraping extends Component {
                 </div>
 
                 <div className = "col-md-6 project-showcase">
-                  <div className = "project-content" style = {{paddingRight: "5.5em", fontSize: "1.1em"}}> 
+                  <div className = "project-content" style = {{paddingRight: "5.5em"}}> 
                     This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the techniques of data Scraping. The target learners are undergraduate and postgraduate students who want to have a career in the field of Data Science but don't know how to start.   In this course, You will learn the basis of Python, HTML, and webApp techniques.  You will also build your own data pipeline using Python, including data scraping from website, data cleaning, and data loading to SQL databse. This course will provide you a new vision about Data Scince and Data Scientist as a career.              
                   </div>
                 </div>
@@ -182,7 +182,7 @@ class Data_Scraping extends Component {
         </section>
 
 
-        <section id="services" style={{backgroundImage: "url(img/Data_Scraping_Student.jpeg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))", marginTop: "5em", fontColor: "black"}}>
+        <section id="services" style={{backgroundImage: "url(img/Data_Scraping_Student.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))", marginTop: "5em", fontColor: "black"}}>
           <div className="container">     
             <h1 style = {{color: "black"}} >Target Students</h1>
             <div className="row services">
@@ -260,7 +260,7 @@ class Data_Scraping extends Component {
 
         </section>
 
-        <section id="services" style={{backgroundImage: "url(img/Data_Scraping_Outcome.jpeg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))", marginTop: "5em", fontColor: "black"}}>
+        <section id="services" style={{backgroundImage: "url(img/Data_Scraping_Outcome.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))", marginTop: "5em", fontColor: "black"}}>
           <div className="container">     
             <h1 style = {{color: "white"}} > Learning Outcomes </h1>
             <div className="row services">
