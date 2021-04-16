@@ -150,7 +150,7 @@ class Data_Visualization extends Component {
                 <div className = "col-md-6  project-showcase" >
                   <div className = "project-content" style = {{textAlign: "Right", paddingTop:"1.5em"}} > 
 
-                    <iframe src='https://www.youtube.com/embed/h_WvNTdFIr4'
+                    <iframe src='https://www.youtube.com/embed/TATeOOj6-EA'
                             frameborder='0'
                             allow='autoplay; encrypted-media'
                             allowfullscreen
@@ -166,9 +166,11 @@ class Data_Visualization extends Component {
                   </div>
                 </div>
 
-                <div className = "col-md-6 project-showcase">
+                <div className = "col-md-6 project-showcase" style = {{paddingRight: "10em"}}>
                   <div className = "project-content" > 
-                      This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the theory and techniques of data visualization. The target learners are undergraduate and postgraduate students, career starters, and continuous learners who are interested in effectively visulizing data and analyzing data. In this course, you are going to develop your own data dashbord using Python, PowerBI and Tableau. You will learn the theoratical foundation of data visualization, the best strategies of visualizing various data types and the related programming and software skills. We are also going to invite Guest Instructors from Industry. 
+
+                    This is a four-week short course (8 hours of lectures + 4 hours of one-to-one instruction). The content involves the theory and technology of data visualization. The target learners are undergraduates and graduate students, career beginners and continuing learners who are interested in effective data analysis and analysis. In this course, you will develop your own data dashboard using Python, PowerBI and Tableau. You will learn the basics of data visualization, the best strategies for visualizing various data types, and related programming and software skills. We will also invite guest instructors from the industry.
+
                   </div>
                 </div>
 
@@ -189,7 +191,7 @@ class Data_Visualization extends Component {
             <div className="row services">
               <div className="col-md-3 text-center">
                 <h3 style = {{color: "black", paddingTop: "1em"}}> Undergraduate </h3>
-                <p style = {{color: "black"}}> If you are an undergraduate student and want to have some expericences in the hottest field in the next few decades </p>
+                <p style = {{color: "black"}}> If you are an undergraduate student and want to have some expericences in Data Science.</p>
 
               </div> 
 
@@ -204,7 +206,7 @@ class Data_Visualization extends Component {
               <div className="col-md-3 text-center" style = {{color: "black"}}>
 
                 <h3 style = {{paddingTop: "1em"}}> PhD Student </h3>
-                <p style = {{color: "black"}}> If you are a PhD student with your own research field, but want to understand what is the world of Data Science in a short time.  
+                <p style = {{color: "black"}}> If you are a PhD student with your own research field, but want to explore the world of Data Science.  
                 </p>
 
               </div> 
@@ -212,7 +214,7 @@ class Data_Visualization extends Component {
               <div className="col-md-3 text-center" style = {{color: "black"}}>
 
                 <h3 style = {{paddingTop: "1em"}}> Career Starter </h3>
-                <p style = {{color: "black"}}> If you are a career starter and want to figure out whether being a Data Scientist will be your future.  
+                <p style = {{color: "black"}}> If you are a career starter and want to figure out whether being a Data Scientist will be suitable for you.  
                 </p>
 
               </div> 
@@ -246,7 +248,7 @@ class Data_Visualization extends Component {
                   </li>
 
                   <li> 
-                    <h4> Lesson 4: Developing your own data dashbord </h4> 
+                    <h4> Lesson 4: Develop your own data dashbord </h4> 
                     <p> In this lesson. ultilizing the skills and kwowledge learned from the previous lessons, you will develop your own data dashbord.  </p> 
                   </li>
 

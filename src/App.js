@@ -156,7 +156,7 @@ class App extends React.Component {
                 <div className="icon">
                   <i className="fa fa-database"></i>            
                 </div>
-                <LinkPage to= '/data-scraping'><button type="button" className = "btn btn-primary" style = {{'backgroundColor': 'Transparent', 'outline':'none', 'border': 'none'}}> <h4> Data Collection and Cleaning </h4> </button></LinkPage>
+                <LinkPage to= '/data-scraping'><button type="button" className = "btn btn-primary" style = {{'backgroundColor': 'Transparent', 'outline':'none', 'border': 'none'}}> <h4> Data Collection </h4> </button></LinkPage>
                 <p> You will build your own data piplines and learn the basis of Python and website. </p>
 
               </div> 
@@ -206,10 +206,9 @@ class App extends React.Component {
 
               <div className="row  project-showcase">
                 <div className = "col-md-6 project-showcase">
-                <h2> Data Collection/Cleaning </h2>
+                <h2> Data Collection </h2>
                 <div className = "project-content"> 
-                  This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the techniques of data collection and cleaning. The target learners are undergraduate/postgraduate students and career starter who want to find job opportunities in the field of Data Science but don't know how to start.   In this course, you will build your own data pipeline using Python, including data scraping from website, data cleaning, and data loading to SQL databse. You will learn the basis of Python, HTML, and webApp techniques.
-                
+                    This is a four-week short course (8 hours of lectures + 4 hours of one-on-one instruction), which involves data collection and cleaning techniques. Target learners are undergraduates/graduates and career beginners who want to find a job in the field of data science but don’t know how to start. In this course, you will use Python to build your own data pipeline, including scraping data from websites, cleaning data, and loading data into SQL databases. You will learn the basics of Python, HTML and webApp technology.                
                 </div>
 
                 <LinkPage to= '/data-scraping'><button type="button" className = "btn btn-primary"> More Info </button></LinkPage>
@@ -230,9 +229,7 @@ class App extends React.Component {
                 <div className = "col-md-6">
                 <h2> Data Visualization </h2>
                 <div className = "project-content"> 
-
-                This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the theory and techniques of data visualization. The target learners are undergraduate and postgraduate students, and career starters who are interested in visulizing data and analyzing data. In this course, you are going to develop your own data dashbord using Python, PowerBI and Tableau. You will learn the theoratical foundation of data visualization, the best strategies of visualizing various data types and the related programming and software skills.              
-               
+                  This is a four-week short course (8 hours of lectures + 4 hours of one-to-one instruction). The content involves the theory and technology of data visualization. The target learners are undergraduates and graduate students, as well as professional beginners who are interested in data visualization and data analysis. In this course, you will develop your own data dashboard using Python, PowerBI and Tableau. You will learn the basics of data visualization, the best strategies for visualizing various data types, and related programming and software skills.             
                 </div>
 
                 <LinkPage to= '/data-visualization'><button type="button" className = "btn btn-primary">  More Info  </button></LinkPage>
@@ -254,8 +251,7 @@ class App extends React.Component {
                 <h2> Machine Learning </h2>
                 <div className = "project-content"> 
 
-                    This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the theory and techniques of data visualization. The target learners are undergraduate and postgraduate students who are interested in developing their own machine learning model. In this course, you will learn the fundamentals of machine learning and the strategies of developing a machine learning model. 
-              
+                    This is a four-week short course (8 hours of lectures + 4 hours of one-to-one instruction). The content involves the essence and best practices of machine learning algorithms. The target learners are undergraduates, graduate students and career beginners who are interested in developing their own machine learning models. In this course, you will learn the basics of machine learning and strategies for developing machine learning models.             
                 </div>
 
                 <LinkPage to= '/machine-learning'><button type="button" className = "btn btn-primary" >  More Info  </button></LinkPage>
@@ -511,7 +507,7 @@ class App extends React.Component {
                       <input type="email" className="form-control" placeholder="Email Address" />
                     </div>
                     <div className="form-group">
-                      <textarea className="form-control" rows="3" placeholder="Your Message"></textarea> 
+                      <textarea className="form-control" rows="5" placeholder="Your Message"></textarea> 
                     </div>
 
                     <button type="submit" className="btn btn-primary">SEND MESSAGE</button>

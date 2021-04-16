@@ -13,46 +13,6 @@ class Data_Scraping extends Component {
 		}
 	}
 
-	handleUsernameChange = (event) => {
-
-		this.setState( {
-			title: event.target.value
-		})
-	}
-
-	handleSeedChange = (event) => {
-		this.setState( {
-			seed: event.target.value
-		})
-	}
-
-	handleSubmit = event => {
-
-    var entry = {seed_text: this.state.seed};
-
-		fetch('/essays/ai_writer_api', {
-      method:"POST",
-      credentials: "include",
-      body: JSON.stringify(entry),
-      cache: "no-cache",
-      headers: new Headers({
-
-        "content-type":"application/json"
-
-      })
-    })
-    .then(res => res.json()).then(data => {
-
-			this.setState({
-
-				text: data.AI_Writer
-			})
-		});
-
-		event.preventDefault()
-	}
-
-
 
 	render (){
 
@@ -143,14 +103,14 @@ class Data_Scraping extends Component {
 
         <div className="container" >
 
-          <h1 style = {{color: "black", fontsize: "bold"}}> Data Collection and Cleaning </h1>
+          <h1 style = {{color: "black", fontsize: "bold"}}> Data Collection </h1>
 
               <div className="row  project-showcase" style = {{ paddingTop: "2em"}}>
 
                 <div className = "col-md-6  project-showcase" >
                   <div className = "project-content" style = {{textAlign: "Right", paddingTop:"1.5em"}} > 
 
-                    <iframe src='https://www.youtube.com/embed/h_WvNTdFIr4'
+                    <iframe src='https://www.youtube.com/embed/TATeOOj6-EA'
                             frameborder='0'
                             allow='autoplay; encrypted-media'
                             allowfullscreen
@@ -166,9 +126,10 @@ class Data_Scraping extends Component {
                   </div>
                 </div>
 
-                <div className = "col-md-6 project-showcase">
+                <div className = "col-md-6 project-showcase" style = {{paddingRight: "10em"}}>
                   <div className = "project-content" > 
-                    This is a four-weeks (8h lecture + 4h one-to-one instruction ) short course on the techniques of data collection and cleaning. The target learners are undergraduate and postgraduate students, career starters, and coutinuous learners who want to have a career in the field of Data Science but don't know how to start. In this course, You will learn the basis of Python, HTML, and webApp techniques.  You will also build your own data pipeline using Python, including data scraping from website, data cleaning, and data loading to SQL databse. This course will provide you a new vision about Data Scince and Data Scientist as a career.              
+                  
+                      This is a four-week short course (8 hours of lectures + 4 hours of one-on-one instruction), which involves data collection and cleaning techniques. Target learners are undergraduates and graduate students, career beginner and continuous learners who want to pursue a career in the field of data science but do not know how to start. In this course, you will learn the basics of Python, HTML and webApp technology. You will also use Python to build your own data pipeline, including crawling data from the website, cleaning the data, and loading the data into a SQL database. This course will provide you with a new perspective on data science and data scientist careers.
                   </div>
                 </div>
 
@@ -189,7 +150,7 @@ class Data_Scraping extends Component {
             <div className="row services">
               <div className="col-md-3 text-center">
                 <h3 style = {{color: "black", paddingTop: "1em"}}> Undergraduate </h3>
-                <p style = {{color: "black"}}> If you are an undergraduate student and want to have some expericence in the hottest field in the next few decades </p>
+                <p style = {{color: "black"}}> If you are an undergraduate student and want to have some first-hand expericence in data science </p>
 
               </div> 
 
@@ -204,7 +165,7 @@ class Data_Scraping extends Component {
               <div className="col-md-3 text-center" style = {{color: "black"}}>
 
                 <h3 style = {{paddingTop: "1em"}}> PhD Student </h3>
-                <p style = {{color: "black"}}> If you are a PhD student with your own research field, but want to understand what is the world of Data Science in a short time.  
+                <p style = {{color: "black"}}> If you are a PhD student with your own research field, but want to explore the world of Data Science in a short time.  
                 </p>
 
               </div> 
@@ -212,7 +173,7 @@ class Data_Scraping extends Component {
               <div className="col-md-3 text-center" style = {{color: "black"}}>
 
                 <h3 style = {{paddingTop: "1em"}}> Career Starter </h3>
-                <p style = {{color: "black"}}> If you are a career starter and want to figure out whether being a Data Scientist will be your future.  
+                <p style = {{color: "black"}}> If you are a career starter and want to figure out whether being a Data Scientist will be suitable for you.  
                 </p>
 
               </div> 
@@ -231,23 +192,23 @@ class Data_Scraping extends Component {
                 <ul>
 
                   <li> 
-                    <h4> Lesson 1: Python and Html Basis </h4> 
-                    <p> In this lesson, you will learn how to write Python code for scraping data from a website developed using HTML. </p> 
+                    <h4> Lesson 1: Python and HTML Basis </h4> 
+                    <p> In this lesson, you will learn writing Python code for scraping data from a HTML-based website. </p> 
                   </li>
 
                   <li> 
-                    <h4> Lesson 2: Get your data out from HTML </h4> 
-                    <p> In this lesson, you will learn how to get any data form a HTML-based web page using BeautifulSoup and Regular Expression. </p> 
+                    <h4> Lesson 2: Get your data from HTML-based web page </h4> 
+                    <p> In this lesson, you will learn how to get data form a HTML-based web page using BeautifulSoup and Regular Expression. </p> 
                   </li>
 
                   <li> 
                     <h4> Lesson 3: Get your data behind barriers </h4> 
-                    <p> In this lesson, you will learn how to break various barriers and get the data you want. </p> 
+                    <p> In this lesson, you will learn how to circle around various barriers and get the data you want. </p> 
                   </li>
 
                   <li> 
-                    <h4> Lesson 4: Legal and Policy on Data Scraping </h4> 
-                    <p> In this lesson. you will learn the relevant leglity and policy about data scrapping and data privacy  </p> 
+                    <h4> Lesson 4: Legal and Ethical in Data Scraping </h4> 
+                    <p> In this lesson. you will learn Legal and Ethical issues in data scrapping and data privacy concerns.  </p> 
                   </li>
 
  
