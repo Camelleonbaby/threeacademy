@@ -333,11 +333,7 @@ class App extends React.Component {
                 <div className="col-md-4 profile-pic text-center">
                   <div className="img-box">
                     <img src="img/weidong.jpg" className="img-responsive"/>
-                  <ul>
-                    <a href="#"><li><i className="fa fa-facebook"></i></li></a>
-                    <a href="#"><li><i className="fa fa-twitter"></i></li></a>
-                    <a href="#"><li><i className="fa fa-linkedin"></i></li></a>   
-                  </ul>
+
 
                 </div>
                     <h2>Dr Weidong LIU</h2>
@@ -350,11 +346,7 @@ class App extends React.Component {
                 <div className="col-md-4 profile-pic text-center">
                   <div className="img-box">
                     <img src="img/weixing.jpg" className="img-responsive"/>
-                  <ul>
-                    <a href="#"><li><i className="fa fa-facebook"></i></li></a>
-                    <a href="#"><li><i className="fa fa-twitter"></i></li></a>
-                    <a href="#"><li><i className="fa fa-linkedin"></i></li></a>   
-                  </ul>
+
 
                 </div>
                     <h2>Dr Weixing XU</h2>
@@ -366,11 +358,7 @@ class App extends React.Component {
                 <div className="col-md-4 profile-pic text-center">
                   <div className="img-box">
                     <img src="img/chuhan.jpg" className="img-responsive" />
-                  <ul>
-                    <a href="#"><li><i className="fa fa-facebook"></i></li></a>
-                    <a href="#"><li><i className="fa fa-twitter"></i></li></a>
-                    <a href="#"><li><i className="fa fa-linkedin"></i></li></a>   
-                  </ul>
+
 
                 </div>
                     <h2>Dr Chuhan WU</h2>
@@ -382,11 +370,7 @@ class App extends React.Component {
                 <div className="col-md-4 profile-pic text-center">
                   <div className="img-box">
                     <img src="img/zhonghuai.jpg" className="img-responsive" />
-                  <ul>
-                    <a href="#"><li><i className="fa fa-facebook"></i></li></a>
-                    <a href="#"><li><i className="fa fa-twitter"></i></li></a>
-                    <a href="#"><li><i className="fa fa-linkedin"></i></li></a>   
-                  </ul>
+
 
                 </div>
                     <h2>Dr Zhonghuai WU</h2>
@@ -399,11 +383,7 @@ class App extends React.Component {
                 <div className="col-md-4 profile-pic text-center">
                   <div className="img-box">
                     <img src="img/wuqi.jpg" className="img-responsive" />
-                  <ul>
-                    <a href="#"><li><i className="fa fa-facebook"></i></li></a>
-                    <a href="#"><li><i className="fa fa-twitter"></i></li></a>
-                    <a href="#"><li><i className="fa fa-linkedin"></i></li></a>   
-                  </ul>
+
 
                 </div>
                     <h2>Dr Qi WU</h2>
@@ -415,13 +395,10 @@ class App extends React.Component {
                 <div className="col-md-4 profile-pic text-center">
                   <div className="img-box">
                     <img src="img/haiyang.jpg" className="img-responsive" />
-                  <ul>
-                    <a href="#"><li><i className="fa fa-facebook"></i></li></a>
-                    <a href="#"><li><i className="fa fa-twitter"></i></li></a>
-                    <a href="#"><li><i className="fa fa-linkedin"></i></li></a>   
-                  </ul>
+
 
                 </div>
+                
                     <h2>Mr Haiyang ZHAO</h2>
                     <h3 style = {{color: "grey", fontSize: "1.2em"}}> Guest Instructor </h3>
                     <p> Haiyang is an experienced data engineer and software developer. He is also a PhD Candidate at UNSW.</p>
