@@ -1,17 +1,61 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom' ;
 import './Data_Scraping.css';
 
 class Data_Scraping extends Component {
-	constructor(props) {
-		super(props)
-		this.state={
-			title: '',
-			seed: '',
-			text: '',
-		}
-	}
+
+  constructor(props) {
+  super(props);
+  this.state = { feedback: '', name: '', phone:'', email: '' };
+  this.handleChange_name = this.handleChange_name.bind(this);
+  this.handleChange_phone = this.handleChange_phone.bind(this);
+  this.handleChange_email = this.handleChange_email.bind(this);
+  this.handleChange_feedback = this.handleChange_feedback.bind(this);
+
+  this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange_name(event) {
+    this.setState({name: event.target.value})
+  }
+
+  handleChange_phone(event) {
+    this.setState({phone: event.target.value})
+  }
+
+  handleChange_email(event) {
+    this.setState({email: event.target.value})
+  }
+
+  handleChange_feedback(event) {
+    this.setState({feedback: event.target.value})
+  }  
+
+
+
+
+
+
+
+  handleSubmit (event) {
+  const templateId = 'template_S68y3y0S';
+
+  this.sendFeedback(templateId, {message_html: this.state.feedback, from_name: this.state.name, reply_to: this.state.email, phone_no: this.state.phone})
+  }
+
+  sendFeedback (templateId, variables) {
+  window.emailjs.send(
+    'service_ohwczkf', templateId,
+    variables
+    ).then(res => {
+      console.log('Email successfully sent!')
+    })
+    // Handle errors here however you like, or use a React error boundary
+    .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+  }
+
+
 
 
 	render (){
@@ -219,7 +263,6 @@ class Data_Scraping extends Component {
         </div>
 
 
-
         </section>
 
         <section id="services" style={{backgroundImage: "url(img/Data_Scraping_Outcome.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))", marginTop: "5em", fontColor: "black"}}>
@@ -259,6 +302,34 @@ class Data_Scraping extends Component {
             </div>
           </div>
         </section>
+
+          <section id="contact">
+            <div className="container">
+              <h1>Register your interest</h1>
+    
+                  <form className="contact-form">
+                    <div className="form-group">
+                      <input type="text" className="form-control" placeholder="Your Name" onChange={this.handleChange_name} value={this.state.name}/>
+                    </div>
+                    <div className="form-group">
+                      <input type="number" className="form-control" placeholder="Phone Number" onChange={this.handleChange_phone} value={this.state.phone}/>
+                    </div>
+                    <div className="form-group">
+                      <input type="email" className="form-control" placeholder="Email Address" onChange={this.handleChange_email} value={this.state.email}/>
+                    </div>
+                    <div className="form-group">
+                      <textarea className="form-control" rows="5" placeholder="Your Message" onChange={this.handleChange_feedback} value={this.state.feedback}></textarea> 
+                    </div>
+
+                    <input type="button" value="Summit" className="btn btn-primary" onClick={this.handleSubmit} />
+
+                  </form>
+\
+              
+            </div>
+            
+          </section>
+
 
         <section id="footer" style={{backgroundImage: "url(img/footer.jpg)", backgroundSize: "cover"  }}>
           <div className="container text-center">

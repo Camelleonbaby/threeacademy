@@ -4,53 +4,56 @@ import { Link } from 'react-router-dom';
 import './Machine_Learning.css';
 
 class Machine_Learning extends Component {
-	constructor(props) {
-		super(props)
-		this.state={
-			title: '',
-			seed: '',
-			text: '',
-		}
-	}
 
-	handleUsernameChange = (event) => {
+  constructor(props) {
+  super(props);
+  this.state = { feedback: '', name: '', phone:'', email: '' };
+  this.handleChange_name = this.handleChange_name.bind(this);
+  this.handleChange_phone = this.handleChange_phone.bind(this);
+  this.handleChange_email = this.handleChange_email.bind(this);
+  this.handleChange_feedback = this.handleChange_feedback.bind(this);
 
-		this.setState( {
-			title: event.target.value
-		})
-	}
+  this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-	handleSeedChange = (event) => {
-		this.setState( {
-			seed: event.target.value
-		})
-	}
+  handleChange_name(event) {
+    this.setState({name: event.target.value})
+  }
 
-	handleSubmit = event => {
+  handleChange_phone(event) {
+    this.setState({phone: event.target.value})
+  }
 
-    var entry = {seed_text: this.state.seed};
+  handleChange_email(event) {
+    this.setState({email: event.target.value})
+  }
 
-		fetch('/essays/ai_writer_api', {
-      method:"POST",
-      credentials: "include",
-      body: JSON.stringify(entry),
-      cache: "no-cache",
-      headers: new Headers({
+  handleChange_feedback(event) {
+    this.setState({feedback: event.target.value})
+  }  
 
-        "content-type":"application/json"
 
-      })
+
+
+
+
+
+  handleSubmit (event) {
+  const templateId = 'template_S68y3y0S';
+
+  this.sendFeedback(templateId, {message_html: this.state.feedback, from_name: this.state.name, reply_to: this.state.email, phone_no: this.state.phone})
+  }
+
+  sendFeedback (templateId, variables) {
+  window.emailjs.send(
+    'service_ohwczkf', templateId,
+    variables
+    ).then(res => {
+      console.log('Email successfully sent!')
     })
-    .then(res => res.json()).then(data => {
-
-			this.setState({
-
-				text: data.AI_Writer
-			})
-		});
-
-		event.preventDefault()
-	}
+    // Handle errors here however you like, or use a React error boundary
+    .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+  }
 
 
 
@@ -298,6 +301,33 @@ class Machine_Learning extends Component {
             </div>
           </div>
         </section>
+
+          <section id="contact">
+            <div className="container">
+              <h1>Register your interest</h1>
+    
+                  <form className="contact-form">
+                    <div className="form-group">
+                      <input type="text" className="form-control" placeholder="Your Name" onChange={this.handleChange_name} value={this.state.name}/>
+                    </div>
+                    <div className="form-group">
+                      <input type="number" className="form-control" placeholder="Phone Number" onChange={this.handleChange_phone} value={this.state.phone}/>
+                    </div>
+                    <div className="form-group">
+                      <input type="email" className="form-control" placeholder="Email Address" onChange={this.handleChange_email} value={this.state.email}/>
+                    </div>
+                    <div className="form-group">
+                      <textarea className="form-control" rows="5" placeholder="Your Message" onChange={this.handleChange_feedback} value={this.state.feedback}></textarea> 
+                    </div>
+
+                    <input type="button" value="Summit" className="btn btn-primary" onClick={this.handleSubmit} />
+
+                  </form>
+\
+              
+            </div>
+            
+          </section>
 
         <section id="footer" style={{backgroundImage: "url(img/footer.jpg)", backgroundSize: "cover"  }}>
           <div className="container text-center">
