@@ -28,6 +28,7 @@ class Popup extends Component {
   this.handleOptionChange = this.handleOptionChange.bind(this);
   this.handleMessageChange = this.handleMessageChange.bind(this);
   this.handleSubmit = this.handleSubmit.bind(this);
+  this.sendFeedback = this.sendFeedback.bind(this);  
 
 	};
 
@@ -66,7 +67,10 @@ class Popup extends Component {
   handleSubmit (event) {
   const templateId = 'template_S68y3y0S';
 
+
   this.sendFeedback(templateId, {message_html: this.state.Popup_Message, from_name: this.state.Popup_Name, reply_to: this.state.Popup_Email, phone_no: this.state.Popup_Phone, course_option: this.state.Popup_Option})
+  this.confirmSubmit();
+
   }
 
   sendFeedback (templateId, variables) {
@@ -80,7 +84,9 @@ class Popup extends Component {
     .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
   }
 
-
+  confirmSubmit () {
+    alert('Thanks you! Your message has been sent. We will contact you as soon as we can.');
+  }
 
 	render (){
 
@@ -168,7 +174,7 @@ class Popup extends Component {
 
 
 
-              <h3 style= {{"color": "grey", "marginTop": "1em"}}> Registration Form </h3>
+              <h3 style= {{"color": "grey", "marginTop": "1em"}}>  </h3>
 
                   <form className="register-form">
 
@@ -194,7 +200,7 @@ class Popup extends Component {
 
                     <div className="form-group">
                       <p> Message: </p>                     
-                      <textarea className="form-control" rows="5" placeholder="Anything let us know?" onChange={this.handleMessageChange} value={this.state.Popup_Message}></textarea> 
+                      <textarea className="form-control" rows="5" placeholder="Your Message" onChange={this.handleMessageChange} value={this.state.Popup_Message}></textarea> 
                     </div>
 
                     <input type="button" value="SUBMIT" className="btn btn-primary" onClick={this.handleSubmit} />
