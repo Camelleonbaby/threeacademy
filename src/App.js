@@ -5,6 +5,7 @@ import AI_eye from './AI_eye';
 import Data_Scraping  from './Data_Scraping' ;
 import Data_Visualization from './Data_Visualization'
 import Machine_Learning from './Machine_Learning'
+import Popup from './Popup';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
 import { Link as LinkPage} from 'react-router-dom' ;
 
@@ -42,6 +43,7 @@ class App extends React.Component {
   this.handleChange_feedback = this.handleChange_feedback.bind(this);
 
   this.handleSubmit = this.handleSubmit.bind(this);
+  this.confirmSubmit = this.confirmSubmit.bind(this)
   }
 
   handleChange_name(event) {
@@ -69,7 +71,11 @@ class App extends React.Component {
   handleSubmit (event) {
   const templateId = 'template_S68y3y0S';
 
-  this.sendFeedback(templateId, {message_html: this.state.feedback, from_name: this.state.name, reply_to: this.state.email, phone_no: this.state.phone})
+
+
+  this.sendFeedback(templateId, {message_html: this.state.feedback, from_name: this.state.name, reply_to: this.state.email, phone_no: this.state.phone});
+
+  this.confirmSubmit();
   }
 
   sendFeedback (templateId, variables) {
@@ -77,10 +83,15 @@ class App extends React.Component {
     'service_ohwczkf', templateId,
     variables
     ).then(res => {
-      console.log('Email successfully sent!')
+      console.log('Message successfully sent!')
+
     })
     // Handle errors here however you like, or use a React error boundary
     .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+  }
+
+  confirmSubmit () {
+    alert('Thanks you! Your message has been sent. We will contact you as soon as we can.');
   }
 
   
@@ -94,7 +105,8 @@ class App extends React.Component {
       <Route path = "/data-scraping" component = {Data_Scraping} /> 
       <Route path = "/data-visualization" component = {Data_Visualization} /> 
       <Route path = "/machine-learning" component = {Machine_Learning} />            
-      <Route path="/aieye" component = {AI_eye} />      
+      <Route path="/aieye" component = {AI_eye} /> 
+      <Route path = "/popup" component = {Popup} />     
 
       <div className="App">
 
@@ -465,13 +477,11 @@ class App extends React.Component {
           </section>
 
 
-          <section id="promo" style={{backgroundImage: "url(img/course.jpg)"}}>
+          <section className="promo" style={{backgroundImage: "url(img/Promotion-1.png)", backgroundSize: "100%"  }}> 
 
             <div className="container">
 
-            <p> Get Free Trail of Data Science/Artificial Intelligence Training Courses.</p>
-
-            <Link type="button" className = "btn btn-primary" style = {{color: "white"}} to="contact" spy={true} smooth={true} offset={-70} duration={500}> Contact Us </Link>
+            <LinkPage to= '/popup'><button type="button" className = "btn btn-primary" style = {{color: "black", 'backgroundColor': "#ffd700", 'outline':'none', 'border': 'none'}}> <h3> Register your interest </h3> </button></LinkPage>
 
             </div>
 
@@ -550,11 +560,11 @@ class App extends React.Component {
 
                   <div className="follow"><b>Phone:</b><i className="fa fa-phone"></i> (+61) 0411 202 887 </div>            
                 
-                  <div className="follow"><b>Email:</b><i className="fa fa-envelope-o"></i>drahadataai@gmail.com </div>  
+                  <div className="follow"><b>Email:</b><i className="fa fa-envelope-o"></i> datatraining@three.academy </div>  
 
                   <div className="follow" style = {{padding: "15px"}}><label><b>Get Social:</b></label>
                     <a href="#"><i className="fa fa-facebook"></i></a>
-                    <a href="#"><i className="fa fa-youtube-play"></i></a>
+                    <a href="https://www.youtube.com/channel/UC9qwEeBXsklGWKhiqc76p_Q"><i className="fa fa-youtube-play"></i></a>
                     <a href="#"><i className="fa fa-twitter"></i></a>
                     <a href="#"><i className="fa fa-google-plus"></i></a>
 
@@ -574,7 +584,8 @@ class App extends React.Component {
       <div className="container text-center">
         <h6> When three are walking together, I am sure to find teachers among them. </h6>
         <p> </p>
-        <p> © Three Academy, All Rights Reserved 2021 </p>      
+        <p> © Three Academy, All Rights Reserved 2021 </p> 
+        <p> ABN: 49 685 769 843 </p>     
         
       </div>
       
