@@ -623,12 +623,30 @@ blockquote::after
   font-size: 20px;
 }
 
+.project {
+
+  margin-top: 1em;
+  font-family: sans-serif;
+
+
+}
+
+
+.project p{
+
+
+  font-size: 0.75em;
+  line-height: 1em;
+
+
+}
+
 
 .register
 
 {
 
-	padding-top: 3em;
+	padding-top: 1em;
 	background-color: #E0E0E0;
 	padding-left: 1em;
 	padding-right: 1em;	
@@ -640,7 +658,7 @@ blockquote::after
 
 {
 
-	padding-top: 1em;
+	padding-top: 0em;
 
 }
 

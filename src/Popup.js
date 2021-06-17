@@ -5,8 +5,8 @@ import Select from 'react-select'
 
 
 const options = [
-  { value: 'Course1', label: '4-week Data Scrapping Training Project' },
-  { value: 'Course2', label: '12-Week End-to-End Data Science Project' },
+  { value: 'Course1', label: 'Project 1: 4-week Data Scrapping Training Project' },
+  { value: 'Course2', label: 'Project 2: 12-Week End-to-End Data Science Project' },
 ]
 
 
@@ -136,11 +136,40 @@ class Popup extends Component {
 
 
 
+
+
           <section id="register">
             <div className="register">
 
-              <h3 style= {{"color": "grey"}}> Data Science Training Project Registration Form </h3>
+              <h3 style= {{"color": "grey"}}> Data Science Training Project </h3>
  
+              <div className = "project">
+
+                <div className = "project1">  
+
+                  <h6> Project 1: Web Data Scrapping </h6>
+                  <p> This is a four-week project (8 hours of lectures + 4 hours of one-on-one instruction), which involves data collection and cleaning techniques. Target learners are undergraduates and graduate students, career beginner and continuous learners who want to pursue a career in the field of data science but do not know how to start. </p> 
+
+ 
+                </div>
+
+                <div className = "project2">  
+
+                  <h6> Project 2: End-to-End Data Science Project</h6>
+                  <p> This is a twelve-week data science project (24 hours of lectures + 12 hours of one-on-one instruction), which involves Web Data Scraping, Data Visualization, and Machine Learning. Target learners are undergraduates and graduate students, career beginner and continuous learners who want to practice their data science skills in a real indutry project.</p> 
+
+
+                </div>
+
+
+                <Link to= '/#home'><button type="button" className = "btn btn-primary"> More Info </button></Link>                
+
+              </div>
+
+
+
+              <h3 style= {{"color": "grey", "marginTop": "1em"}}> Registration Form </h3>
+
                   <form className="register-form">
 
                     <div className="form-group">
