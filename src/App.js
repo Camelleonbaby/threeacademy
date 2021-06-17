@@ -281,7 +281,7 @@ class App extends React.Component {
 
                 <div className = "col-md-6">
                   <div className = "project-img"> 
-                  <img src="img/datascraping.jpg" className="img-responsive" style = {{paddingRight: "10em", paddingBottom: "2em", paddingLeft: "2em"}}/>  
+                  <img src="img/datascraping.jpg" className="img-responsive" style = {{paddingRight: "10em", paddingBottom: "2em", paddingLeft: "0em"}}/>  
                   </div>
 
               </div>
@@ -302,7 +302,7 @@ class App extends React.Component {
 
                 <div className = "col-md-6">
                   <div className = "project-img"> 
-                  <img src="img/datavisualization.jpg" className="img-responsive" style = {{paddingRight: "10em", paddingBottom: "2em", paddingLeft: "2em"}} />  
+                  <img src="img/datavisualization.jpg" className="img-responsive" style = {{paddingRight: "10em", paddingBottom: "2em", paddingLeft: "0em"}} />  
                   </div>
 
               </div>
@@ -324,7 +324,7 @@ class App extends React.Component {
 
                 <div className = "col-md-6">
                   <div className = "project-img"> 
-                  <img src="img/machinelearning.jpg" className="img-responsive" style = {{paddingRight: "10em", paddingBottom: "2em", paddingLeft: "2em"}}/>  
+                  <img src="img/machinelearning.jpg" className="img-responsive" style = {{paddingRight: "10em", paddingBottom: "2em", paddingLeft: "0em"}}/>  
                   </div>
 
               </div>
@@ -481,7 +481,7 @@ class App extends React.Component {
 
             <div className="container">
 
-            <LinkPage to= '/popup'><button type="button" className = "btn btn-primary" style = {{color: "black", 'backgroundColor': "#ffd700", 'outline':'none', 'border': 'none'}}> <h3> Register your interest </h3> </button></LinkPage>
+            <LinkPage to= '/popup' className = "linkpage"><button type="button" className = "btn btn-primary" style = {{color: "black", 'backgroundColor': "#ffd700", 'outline':'none', 'border': 'none'}}> Register your interest </button></LinkPage>
 
             </div>
 
@@ -496,7 +496,7 @@ class App extends React.Component {
                 <div className="col-md-4 text-center">
                   <div className="profile">
                     <img src="img/testimonial.jpg" className="user" />
-                    <blockquote> The data courses developed by Three Academy help me start my creer in the field of Data Science  </blockquote>
+                    <p> The data courses developed by Three Academy help me start my creer in the field of Data Science  </p>
 
                     <h3> Allen  </h3>          
 
@@ -507,7 +507,7 @@ class App extends React.Component {
               <div className="col-md-4 text-center">
                   <div className="profile">
                     <img src="img/testimonial.jpg" className="user" />
-                    <blockquote> I learned a lot from the industrail data projects. The Instructor is knowledgable and friendly </blockquote>
+                    <p> I learned a lot from the industrail data projects. The Instructor is knowledgable and friendly </p>
 
                     <h3> Frank  </h3>           
 
@@ -518,7 +518,7 @@ class App extends React.Component {
               <div className="col-md-4 text-center">
                   <div className="profile">
                     <img src="img/testimonial.jpg" className="user" />
-                    <blockquote>Three Academy has the best teachers in the field of data science and machine learning. I love the learning environment.</blockquote>
+                    <p>Three Academy has the best teachers in the field of data science and machine learning. I love the learning environment.</p>
 
                     <h3> Nick </h3>           
 
