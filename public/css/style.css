@@ -635,8 +635,20 @@ blockquote::after
 .project p{
 
 
-  font-size: 0.75em;
+  font-size: 0.8em;
   line-height: 1em;
+  margin-top: 0em;
+  margin-bottom: 0.3em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+
+
+}
+
+.project h6{
+
+  font-style:  italic;
+  margin-top: 1em;
 
 
 }

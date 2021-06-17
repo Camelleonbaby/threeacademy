@@ -9,6 +9,12 @@ const options = [
   { value: 'Course2', label: 'Project 2: 12-Week End-to-End Data Science Project' },
 ]
 
+const optionsEdu = [
+  { value: 'Bachelor', label: 'Bachelor' },
+  { value: 'Master', label: 'Master' },
+  { value: 'PhD', label: 'PhD' },  
+]
+
 
 class Popup extends Component {
 	constructor(props) {
@@ -17,6 +23,7 @@ class Popup extends Component {
 			Popup_Name: '',
 			Popup_Phone: '',
 			Popup_Email: '',
+      Popup_Edu: '',
       Popup_Option: 'Course1',
       Popup_Message: ''
 
@@ -26,6 +33,7 @@ class Popup extends Component {
   this.handleEmailChange = this.handleEmailChange.bind(this);
   this.handlePhoneChange = this.handlePhoneChange.bind(this);
   this.handleOptionChange = this.handleOptionChange.bind(this);
+   this.handleOptionEduChange = this.handleOptionEduChange.bind(this); 
   this.handleMessageChange = this.handleMessageChange.bind(this);
   this.handleSubmit = this.handleSubmit.bind(this);
   this.sendFeedback = this.sendFeedback.bind(this);  
@@ -57,6 +65,12 @@ class Popup extends Component {
     })
   }
 
+  handleOptionEduChange = (event) => {
+    this.setState( {
+      Popup_Edu: event.value
+    })
+  }
+
   handleMessageChange = (event) => {
     this.setState( {
       Popup_Message: event.target.value
@@ -68,7 +82,7 @@ class Popup extends Component {
   const templateId = 'template_S68y3y0S';
 
 
-  this.sendFeedback(templateId, {message_html: this.state.Popup_Message, from_name: this.state.Popup_Name, reply_to: this.state.Popup_Email, phone_no: this.state.Popup_Phone, course_option: this.state.Popup_Option})
+  this.sendFeedback(templateId, {message_html: this.state.Popup_Message, from_name: this.state.Popup_Name, reply_to: this.state.Popup_Email, phone_no: this.state.Popup_Phone, education: this.state.Popup_Edu, course_option: this.state.Popup_Option})
   this.confirmSubmit();
 
   }
@@ -153,22 +167,28 @@ class Popup extends Component {
 
                 <div className = "project1">  
 
-                  <h6> Project 1: Web Data Scrapping </h6>
-                  <p> This is a four-week project (8 hours of lectures + 4 hours of one-on-one instruction), which involves data collection and cleaning techniques. Target learners are undergraduates and graduate students, career beginner and continuous learners who want to pursue a career in the field of data science but do not know how to start. </p> 
+                  <h6> Project 1: Data Scrapping Project </h6>
+                  <p> - This is a four-week project (8 hours of training + 4 hours of one-on-one instruction) </p>
+                  <p> - Web data scraping and cleaning tasks using Python</p>
+                  <p> - Suitable for students who want to start learning data science </p>
+                  <p> - Skills covering Python, HTML, Web Server techniques etc. </p> 
 
  
                 </div>
 
                 <div className = "project2">  
 
-                  <h6> Project 2: End-to-End Data Science Project</h6>
-                  <p> This is a twelve-week data science project (24 hours of lectures + 12 hours of one-on-one instruction), which involves Web Data Scraping, Data Visualization, and Machine Learning. Target learners are undergraduates and graduate students, career beginner and continuous learners who want to practice their data science skills in a real indutry project.</p> 
+                  <h6> Project 2: End-to-End Data Project</h6>
+                  <p> - This is a twelve-week data science project (24 hours of training + 12 hours of one-on-one instruction) </p>
+                  <p> - Including three modules: Web Data Scraping, Data Visualization, and Machine Learning </p>
+                  <p> - Suitable for students who want to practice their data science skills in a real indutry project.</p> 
+                  <p> - Skils covering Python, HTML, Web Dashboard, Machine Learning etc. </p>
 
 
                 </div>
 
 
-                <Link to= '/#home'><button type="button" className = "btn btn-primary"> More Info </button></Link>                
+                <Link to= '/#home'><button type="button" className = "btn btn-primary" style = {{marginTop: "1em"}}> More Info </button></Link>                
 
               </div>
 
@@ -179,8 +199,8 @@ class Popup extends Component {
                   <form className="register-form">
 
                     <div className="form-group">
-                      <p> Name: </p>
-                      <input type="text" className="form-control" placeholder="Your Name" onChange={this.handleNameChange} value={this.state.Popup_Name}/>
+                      <p> Name*: </p>
+                      <input type="text" className="form-control" placeholder="Your Name" onChange={this.handleNameChange} value={this.state.Popup_Name} required="required"/>
                     </div>
 
                     <div className="form-group">
@@ -189,12 +209,18 @@ class Popup extends Component {
                     </div>
 
                     <div className="form-group">
-                      <p> Email: </p>                    
+                      <p> Email*: </p>                    
                       <input type="email" className="form-control" placeholder="Email Address" onChange={this.handleEmailChange} value={this.state.Popup_Email}/>
                     </div>
 
+
                     <div className="form-group">
-                      <p> Training Project: </p> 
+                      <p> Eudcation: </p>
+                      <Select  onChange={this.handleOptionEduChange} options={optionsEdu} /> 
+                    </div>
+
+                    <div className="form-group">
+                      <p> Training Project*: </p> 
                       <Select  onChange={this.handleOptionChange} options={options} />                   
                     </div> 
 
