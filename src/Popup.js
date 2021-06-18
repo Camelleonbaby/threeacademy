@@ -171,7 +171,7 @@ class Popup extends Component {
                   <p> - This is a four-week project (8 hours of training + 4 hours of one-on-one instruction) </p>
                   <p> - Web data scraping and cleaning tasks using Python</p>
                   <p> - Suitable for students who want to start learning data science </p>
-                  <p> - Skills covering Python, HTML, Web Server techniques etc. </p> 
+                  <p> - Skills cover Python, HTML, Web Server techniques etc. </p> 
 
  
                 </div>
@@ -180,9 +180,9 @@ class Popup extends Component {
 
                   <h6> Project 2: End-to-End Data Project</h6>
                   <p> - This is a twelve-week data science project (24 hours of training + 12 hours of one-on-one instruction) </p>
-                  <p> - Including three modules: Web Data Scraping, Data Visualization, and Machine Learning </p>
-                  <p> - Suitable for students who want to practice their data science skills in a real indutry project.</p> 
-                  <p> - Skils covering Python, HTML, Web Dashboard, Machine Learning etc. </p>
+                  <p> - Include three modules: Web Data Scraping, Data Visualization, and Machine Learning </p>
+                  <p> - Suitable for students who want to practice their data science skills in a real industrial project.</p> 
+                  <p> - Skills cover Python, HTML, Web Dashboard, Machine Learning etc. </p>
 
 
                 </div>
@@ -215,7 +215,7 @@ class Popup extends Component {
 
 
                     <div className="form-group">
-                      <p> Eudcation: </p>
+                      <p> Education: </p>
                       <Select  onChange={this.handleOptionEduChange} options={optionsEdu} /> 
                     </div>
 
