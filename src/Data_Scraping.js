@@ -237,12 +237,12 @@ class Data_Scraping extends Component {
 
                   <li> 
                     <h4> Lesson 1: Python and HTML Basis </h4> 
-                    <p> In this lesson, you will learn writing Python code for scraping data from a HTML-based website. </p> 
+                    <p> In this lesson, you will learn to write Python code for scraping data from a HTML-based website. </p> 
                   </li>
 
                   <li> 
                     <h4> Lesson 2: Get your data from HTML-based web page </h4> 
-                    <p> In this lesson, you will learn how to get data form a HTML-based web page using BeautifulSoup and Regular Expression. </p> 
+                    <p> In this lesson, you will learn how to get data from a HTML-based web page using BeautifulSoup and Regular Expression. </p> 
                   </li>
 
                   <li> 
